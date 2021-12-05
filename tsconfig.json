@@ -21,17 +21,15 @@
     "jsx": "react-jsx",
     "typeRoots": [
       "./types"
-    ]
+    ],
+    "isolatedModules": true
   },
   "include": [
     "src",
-    ".eslintrc.js",
-    "node_modules/@types/jest/index.d.ts"
+    ".eslintrc.js"
   ],
   "exclude": [
-    "config-overrides.js",
-    "jest.config.js",
-    "jest/setupTests.js"
+    "config-overrides.js"
   ],
   "typeRoots": [
     "./types"

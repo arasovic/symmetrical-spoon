@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import NavigationBar from '@components/NavigationBar'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -7,7 +8,12 @@ const Wrapper = styled.div`
 `
 
 const Basic: React.FC = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>
+  return (
+    <Wrapper>
+      <NavigationBar />
+      {children}
+    </Wrapper>
+  )
 }
 
 export default Basic

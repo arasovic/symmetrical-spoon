@@ -27,17 +27,13 @@ export const LoginError = (): AuthActionTypes => ({
   type: LOGIN_ERROR
 })
 
-export const applyAuthListener = (): ThunkAction<
-  void,
-  RootState,
-  unknown,
-  Action<string>
-> => dispatch => {
-  try {
-    dispatch(LoginRequest())
-    // Here dispatch whole user listener
-    dispatch(LoginSuccess('user-custom-id'))
-  } catch (e) {
-    dispatch(LoginError())
+export const applyAuthListener =
+  (): ThunkAction<void, RootState, unknown, Action<string>> => dispatch => {
+    try {
+      dispatch(LoginRequest())
+      // Here dispatch whole user listener
+      dispatch(LoginSuccess('user-custom-id'))
+    } catch (e) {
+      dispatch(LoginError())
+    }
   }
-}

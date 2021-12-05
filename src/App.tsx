@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import theme from '@styles/theme'
 import GlobalStyles from '@styles/GlobalStyles'
+import 'semantic-ui-css-offline'
 
 import InitListeners from '@components/InitListeners'
 import Main from '@pages/Main'

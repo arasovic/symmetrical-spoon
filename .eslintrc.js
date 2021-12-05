@@ -20,6 +20,7 @@ module.exports = {
     'no-shadow': 'off',
     'react-redux/connect-prefer-named-arguments': 'off',
     'react-redux/prefer-separate-component-file': 'off',
+    'react/jsx-wrap-multilines': 'off',
     'prettier/prettier': [
       'error',
       {
