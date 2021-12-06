@@ -1,28 +1,30 @@
 import { createGlobalStyle } from 'styled-components'
 
 import './font.css'
-// we need override semantic ui css so everywhere !important
+
 const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
     //box-sizing: border-box;
     //margin: 0;
     //padding: 0;
-    
+
   }
 
   :root {
-    
+
   }
 
   body {
-    
+
   }
-  
-  :not(.icon){ // semantic icons need default font
+
+  // we need override --semantic ui css-- so there are !important everywhere
+
+  :not(.icon) { // semantic icons need default font
     font-family: 'HelveticaNeue', serif !important;
   }
-  
-  .navbar-item{
+
+  .navbar-item {
     @media only screen and (max-width: 767px) {
       display: flex !important;
       justify-content: center !important;
@@ -77,7 +79,11 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer !important;
     width: 3.2rem !important;
   }
-  
+
+  .product-card-add-basket-button:hover {
+    filter: grayscale(15%) !important;
+  }
+
 `
 
 export default GlobalStyles
