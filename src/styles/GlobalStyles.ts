@@ -25,9 +25,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .navbar-item {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       display: flex !important;
       justify-content: center !important;
+      flex-direction: column !important;
     }
   }
   
@@ -82,6 +83,13 @@ const GlobalStyles = createGlobalStyle`
 
   .product-card-add-basket-button:hover {
     filter: grayscale(15%) !important;
+  }
+  
+  .navbar-sidebar-button{
+    display: flex !important;
+    flex-direction: row !important;
+    align-content: flex-end !important;
+    align-items: flex-end !important;
   }
 
 `
