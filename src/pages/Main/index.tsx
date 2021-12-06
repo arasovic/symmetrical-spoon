@@ -11,7 +11,7 @@ const Main: React.FC = () => {
       <StyledMainContainer>
         <Breadcrumb className='nav-breadcrumb'>
           <Breadcrumb.Section active>Products</Breadcrumb.Section>
-          <Breadcrumb.Divider />
+          <Breadcrumb.Divider icon='right chevron' />
           <Breadcrumb.Section link>selected value</Breadcrumb.Section>
         </Breadcrumb>
         <StyledMainGrid stackable>
