@@ -56,7 +56,6 @@ const NavbarOtherItems: React.FC = () => {
           position='bottom center'
           open={cartState.products?.length === 0 ? false : undefined}
           on='click'
-          hideOnScroll
           trigger={
             <Button fluid color='red' circular compact>
               <Image
