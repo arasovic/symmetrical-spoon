@@ -8,7 +8,7 @@ import {
   Segment
 } from 'semantic-ui-react'
 
-const Footer: React.FC = props => {
+const Footer: React.FC = () => {
   return (
     <Segment
       vertical

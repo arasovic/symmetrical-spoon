@@ -5,8 +5,8 @@ import { Breadcrumb, Grid, Button, Card } from 'semantic-ui-react'
 import { StyledMainContainer, StyledMainGrid } from '@styles/StyledComponents'
 import ProductCard from '@components/ProductCard'
 import { useDispatch, useSelector } from 'react-redux'
-import getProductState from '@redux/products/selector'
-import { getAllProducts, selectProdLabel } from '@redux/products/actions'
+import getProductState from '@redux/product/selector'
+import { getAllProducts, selectProdLabel } from '@redux/product/actions'
 import { Product } from 'types/product'
 
 const Main: React.FC = () => {
@@ -21,17 +21,7 @@ const Main: React.FC = () => {
     return (
       <>
         {productState?.selectedProductData.map(data => {
-          return (
-            <ProductCard
-              details={data.details}
-              label={data.label}
-              discountLabel={data.discountLabel}
-              id={data.id}
-              key={data.id}
-              price={data.price}
-              firstPrice={data.firstPrice}
-            />
-          )
+          return <ProductCard {...data} key={data.id} />
         })}
       </>
     )
@@ -64,7 +54,7 @@ const Main: React.FC = () => {
                   return (
                     <Button
                       className='products-button'
-                      key={prod.label}
+                      key={`${prod.label} ${Math.random().toString()}`} // for console error
                       onClick={() => onSelectProduct(prod)}
                     >
                       {prod.label}

@@ -3,6 +3,7 @@ import {
   Button,
   Container,
   Grid,
+  Header,
   Icon,
   Image,
   Menu,
@@ -19,6 +20,10 @@ import {
   StyledSidebarButton
 } from '@styles/StyledComponents'
 import SidebarMenu from '@components/SidebarMenu'
+import { useDispatch, useSelector } from 'react-redux'
+import getCartState from '@redux/cart/selector'
+import CartContent from '@components/CartContent'
+import { clearProduct } from '@redux/cart/actions'
 
 const NavbarLogoItem: React.FC = () => {
   return (
@@ -29,6 +34,9 @@ const NavbarLogoItem: React.FC = () => {
 }
 
 const NavbarOtherItems: React.FC = () => {
+  const cartState = useSelector(getCartState)
+  const dispatch = useDispatch()
+
   return (
     <>
       <Menu.Item as='a' className='navbar-item'>
@@ -44,8 +52,11 @@ const NavbarOtherItems: React.FC = () => {
       </Menu.Item>
       <Menu.Item>
         <Popup
+          style={{ paddingRight: '2em' }}
           position='bottom center'
-          wide='very'
+          open={cartState.products?.length === 0 ? false : undefined}
+          on='click'
+          hideOnScroll
           trigger={
             <Button fluid color='red' circular compact>
               <Image
@@ -56,13 +67,41 @@ const NavbarOtherItems: React.FC = () => {
                 alt='basket'
                 style={{ marginRight: '1rem' }}
               />
-              0.00 TL
+              {`${
+                cartState.totalPrice === 0 ? '0.00' : cartState.totalPrice
+              } TL`}
             </Button>
           }
-          on='click'
-          hideOnScroll
         >
-          basket content
+          <Header textAlign='center'>Cart</Header>
+          {cartState.products?.length > 0 && (
+            <>
+              {cartState.products.map(prod => {
+                return (
+                  // <ProductCard {...prod} /> it will be good but need conditional styling in <ProductCard/> component
+                  <CartContent {...prod} />
+                )
+              })}
+              <Grid>
+                <Grid.Row columns='equal'>
+                  <Grid.Column width={8}>
+                    <Button
+                      color='red'
+                      floated='left'
+                      onClick={() => dispatch(clearProduct())}
+                    >
+                      Clear
+                    </Button>
+                  </Grid.Column>
+                  <Grid.Column width={8}>
+                    <Button color='green' disabled floated='right'>
+                      Buy
+                    </Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </>
+          )}
         </Popup>
       </Menu.Item>
     </>
@@ -71,6 +110,7 @@ const NavbarOtherItems: React.FC = () => {
 
 const NavigationBar: React.FC = () => {
   const [isVisibleSidebar, setIsVisibleSidebar] = useState(false)
+  const cartState = useSelector(getCartState)
 
   return (
     <Menu attached='top' borderless>
@@ -93,18 +133,18 @@ const NavigationBar: React.FC = () => {
                 <NavbarOtherItems />
               </Menu.Menu>
             </Grid.Column>
-            <Grid.Column
-              only='tablet mobile'
-              verticalAlign='middle'
-              mobile={8}
-              tablet={8}
-              className='navbar-sidebar-button'
-            >
+            <Grid.Column only='tablet mobile' mobile={8} tablet={8}>
               <StyledSidebarButton
-                color='red'
+                color='blue'
                 onClick={() => setIsVisibleSidebar(true)}
               >
-                <Icon name={isVisibleSidebar ? 'x' : 'bars'} fitted />
+                {cartState.products.length > 0 ? (
+                  <>{`${cartState.totalPrice}TL`}</>
+                ) : (
+                  <>
+                    <Icon name={isVisibleSidebar ? 'x' : 'bars'} fitted />
+                  </>
+                )}
               </StyledSidebarButton>
             </Grid.Column>
           </Grid.Row>

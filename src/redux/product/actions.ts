@@ -9,7 +9,7 @@ import {
   FETCH_PRODUCTS_SUCCESS,
   ProductActionTypes,
   SELECT_PRODUCT
-} from '@redux/products/types'
+} from '@redux/product/types'
 import { Product } from '../../types/product'
 
 export const fetchProducts = (): ProductActionTypes => {

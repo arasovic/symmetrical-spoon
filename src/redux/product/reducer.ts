@@ -5,7 +5,7 @@ import {
   ProductActionTypes,
   ProductState,
   SELECT_PRODUCT
-} from '@redux/products/types'
+} from '@redux/product/types'
 
 const initialState: ProductState = {
   allProducts: [],

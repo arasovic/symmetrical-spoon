@@ -88,13 +88,6 @@ const GlobalStyles = createGlobalStyle`
     filter: grayscale(15%) !important;
   }
 
-  .navbar-sidebar-button {
-    display: flex !important;
-    flex-direction: row !important;
-    align-content: flex-end !important;
-    align-items: flex-end !important;
-  }
-
 `
 
 export default GlobalStyles
