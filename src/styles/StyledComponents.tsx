@@ -27,6 +27,7 @@ export const StyledMainGrid = styled(Grid)`
 
 export const StyledSidebarButton = styled(Button)`
   position: fixed !important;
-  right: 5ex !important;
-  top: 15px !important;
+  right: 15px !important;
+  bottom: 15px !important;
+  z-index: 103 !important;
 `

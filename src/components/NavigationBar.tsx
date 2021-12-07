@@ -104,7 +104,7 @@ const NavigationBar: React.FC = () => {
                 color='red'
                 onClick={() => setIsVisibleSidebar(true)}
               >
-                <Icon name='bars' fitted />
+                <Icon name={isVisibleSidebar ? 'x' : 'bars'} fitted />
               </StyledSidebarButton>
             </Grid.Column>
           </Grid.Row>
