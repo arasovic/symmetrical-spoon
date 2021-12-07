@@ -79,6 +79,7 @@ const GlobalStyles = createGlobalStyle`
     margin-left: auto !important;
     cursor: pointer !important;
     width: 3.2rem !important;
+    min-width: 2rem !important;
   }
 
   .product-card-add-basket-button:hover {

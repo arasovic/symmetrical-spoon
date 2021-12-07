@@ -1,4 +1,4 @@
-import React, { ReactChildren, ReactChild, FC } from 'react'
+import React, { ReactChildren, ReactChild, FC, useEffect } from 'react'
 import { Menu, Sidebar } from 'semantic-ui-react'
 
 interface SidebarProps {
@@ -8,6 +8,13 @@ interface SidebarProps {
 }
 
 const SidebarMenu: FC<SidebarProps> = ({ visible, children, onHide }) => {
+  useEffect(() => {
+    window.addEventListener('resize', () => onHide())
+    return () => {
+      window.removeEventListener('resize', () => onHide())
+    }
+  }, [visible])
+
   return (
     <>
       <Sidebar
