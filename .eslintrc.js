@@ -21,6 +21,7 @@ module.exports = {
     'react-redux/connect-prefer-named-arguments': 'off',
     'react-redux/prefer-separate-component-file': 'off',
     'react/jsx-wrap-multilines': 'off',
+    'import/prefer-default-export': 'off',
     'prettier/prettier': [
       'error',
       {

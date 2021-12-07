@@ -1,18 +1,55 @@
-import React from 'react'
+import React, { useEffect, useMemo } from 'react'
 
 import Basic from '@layouts/Basic'
 import { Breadcrumb, Grid, Button, Card } from 'semantic-ui-react'
 import { StyledMainContainer, StyledMainGrid } from '@styles/StyledComponents'
 import ProductCard from '@components/ProductCard'
+import { useDispatch, useSelector } from 'react-redux'
+import getProductState from '@redux/products/selector'
+import { getAllProducts, selectProdLabel } from '@redux/products/actions'
+import { Product } from 'types/product'
 
 const Main: React.FC = () => {
+  const productState = useSelector(getProductState)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAllProducts())
+  }, [])
+
+  const cardRenderer = useMemo(() => {
+    return (
+      <>
+        {productState?.selectedProductData.map(data => {
+          return (
+            <ProductCard
+              details={data.details}
+              label={data.label}
+              discountLabel={data.discountLabel}
+              id={data.id}
+              key={data.id}
+              price={data.price}
+              firstPrice={data.firstPrice}
+            />
+          )
+        })}
+      </>
+    )
+  }, [productState.selectedProductData])
+
+  const onSelectProduct = (prod: Product) => {
+    dispatch(selectProdLabel(prod))
+  }
+
   return (
     <Basic>
       <StyledMainContainer>
         <Breadcrumb className='nav-breadcrumb'>
           <Breadcrumb.Section active>Products</Breadcrumb.Section>
           <Breadcrumb.Divider icon='right chevron' />
-          <Breadcrumb.Section link>selected value</Breadcrumb.Section>
+          <Breadcrumb.Section link>
+            {productState.selectedProductLabel}
+          </Breadcrumb.Section>
         </Breadcrumb>
         <StyledMainGrid stackable>
           <Grid.Row columns={2}>
@@ -23,23 +60,22 @@ const Main: React.FC = () => {
                 color='red'
                 className='products-button-group'
               >
-                <Button className='products-button'>Feed</Button>
-                <Button className='products-button'>Feed</Button>
-                <Button className='products-button'>Feed</Button>
-                <Button className='products-button'>Feed</Button>
-                <Button className='products-button'>Feed</Button>
+                {productState?.allProducts.map(prod => {
+                  return (
+                    <Button
+                      className='products-button'
+                      key={prod.label}
+                      onClick={() => onSelectProduct(prod)}
+                    >
+                      {prod.label}
+                    </Button>
+                  )
+                })}
               </Button.Group>
             </Grid.Column>
             <Grid.Column width={13}>
               <Card.Group itemsPerRow={2} centered>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+                {cardRenderer}
               </Card.Group>
             </Grid.Column>
           </Grid.Row>

@@ -1,0 +1,651 @@
+{
+  "products": [
+    {
+      "label": "Popüler Ürünler",
+      "data": [
+        {
+          "id": "f357ab33-2327-4809-aa15-019215cd9336",
+          "label": "3'lü Whopper Fırsatı",
+          "price": 45.0,
+          "discountLabel": "%5 İndirim",
+          "firstPrice": 47.96,
+          "details": [
+            "x2 Lipsum",
+            "10'lu Lorem Ipsum",
+            "x3 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "8a427125-2458-4cdb-bced-22b7d26af925",
+          "label": "Kral İkili",
+          "price": 40.96,
+          "discountLabel": "%10 İndirim",
+          "firstPrice": 44.05,
+          "details": [
+            "x3 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "40742519-03b1-41cd-b614-dc33ab998c7a",
+          "label": "Kral Menü",
+          "price": 42,
+          "discountLabel": "%15 İndirim",
+          "firstPrice": 49.9,
+          "details": null
+        },
+        {
+          "id": "ebe1a33f-97fe-4296-88b1-246db068572f",
+          "label": "Benim İkilim",
+          "price": 34.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        }
+      ]
+    },
+    {
+      "label": "Menüler",
+      "data": [
+        {
+          "id": "6e390571-9a32-45a6-9137-7c4adb51b03d",
+          "label": "3'lü Whopper Fırsatı",
+          "price": 42.96,
+          "discountLabel": "%10 İndirim",
+          "firstPrice": 47.96,
+          "details": [
+            "x3 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "4e08234e-bc32-4d46-aa59-d07aad51a90b",
+          "label": "Kral İkili",
+          "price": 39.96,
+          "discountLabel": "%12 İndirim",
+          "firstPrice": 44.05,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "f4060635-2877-465c-b42d-134b306f1225",
+          "label": "5'li Whopper Fırsatı",
+          "price": 79.9,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "cb92bd50-2fc6-4e7d-9489-be7540f35c84",
+          "label": "Algida Menüsü",
+          "price": 44.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "ea4db053-14c0-4e9a-8904-310a067d0a33",
+          "label": "Dörtlü Big King Fırsatı",
+          "price": 99.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "3c4c0abb-42e0-4c45-ae1c-61c68bacc595",
+          "label": "Diamond Gamer Menü",
+          "price": 33.99,
+          "discountLabel": "%10 indirim",
+          "firstPrice": 31.21,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum"
+          ]
+        },
+        {
+          "id": "02db92cc-3d02-4b24-91d0-6ada8bbf31e7",
+          "label": "Pro Gamer Tavuklu BBQ Deluxe Menü",
+          "price": 37.99,
+          "discountLabel": "%20 İndirim",
+          "firstPrice": 30.05,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "40cf2b08-49ca-4930-9bb7-854aea49f7da",
+          "label": "Lezzet Kovalı Maç Menüsü",
+          "price": 54.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "x7 Lipsum",
+            "10'lu Lorem Ipsum"
+          ]
+        },
+        {
+          "id": "bb0ddbfa-9629-463b-9724-0e0164411be3",
+          "label": "Burger King Algida Menüsü 2",
+          "price": 52.49,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Çıtır Lezzetler",
+      "data": [
+        {
+          "id": "64e980c1-b1d4-4c59-b37e-0d051137d0ae",
+          "label": "Whooper Jr. Menü",
+          "price": 28.5,
+          "discountLabel": "%20 İndirim",
+          "firstPrice": 35,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "d76e6157-92a2-49cd-a689-d2094d1a3edb",
+          "label": "Whooper Menü",
+          "price": 37.5,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": ["10'lu lorem", "x4 Lipsum", "15'lu Lorem Ipsum"]
+        },
+        {
+          "id": "636b037b-1ebf-420f-9dec-c532ec01c4e3",
+          "label": "Double Whopper Menü",
+          "price": 48.5,
+          "discountLabel": "%4 İndirim",
+          "firstPrice": 55,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "b0866779-e1bb-4720-a370-604ddcf2438e",
+          "label": "Triple Whooper Menü",
+          "price": 44.99,
+          "discountLabel": "%30 İndirim",
+          "firstPrice": 66,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "948f75d7-8585-4151-98e6-73688d65b3f7",
+          "label": "Big King Jr. Menü",
+          "price": 28.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": ["10'lu lorem"]
+        },
+        {
+          "id": "20b0144e-2acb-4aef-86f8-769612f1c21b",
+          "label": "Big King Menü",
+          "price": 34,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": ["x4 Lipsum", "15'lu Lorem Ipsum", "x2 Lorem"]
+        },
+        {
+          "id": "604e9c8e-8533-4558-9869-33435270d770",
+          "label": "Double King Menü",
+          "price": 49.99,
+          "discountLabel": "%3 indirim",
+          "firstPrice": 51,
+          "details": [
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "51f9ebc6-7bd3-400d-a3c5-bf79c82d487d",
+          "label": "Big King XXL Menü",
+          "price": 51.99,
+          "discountLabel": "%5 indirim",
+          "firstPrice": 55,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "24d1a274-261e-492a-80ed-e6f908a74058",
+          "label": "Double CheeseBurger Menü",
+          "price": 34.49,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "x4 Lipsum",
+            "x2 Lorem"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Delight Ürünler",
+      "data": [
+        {
+          "id": "33758cbf-afea-4c19-9a8b-cbad320aa00d",
+          "label": "Whooper Jr. Menü",
+          "price": 28.5,
+          "discountLabel": "%5 indirim",
+          "firstPrice": 30,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "fbe5ed8c-1712-41d1-8bd1-56b94ffb8b91",
+          "label": "Whooper Menü",
+          "price": 37.5,
+          "discountLabel": "%5 indirim",
+          "firstPrice": 40,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "a08b63ac-7a24-4b3e-b57d-360428b2a0ca",
+          "label": "Double Whopper Menü",
+          "price": 48.5,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "03d3f388-4345-4b58-8bd3-75052a7265fa",
+          "label": "Triple Whooper Menü",
+          "price": 44.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "0b9ba81e-777a-4082-8157-0d913debb855",
+          "label": "Big King Jr. Menü",
+          "price": 28.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "ec18fc2d-2c05-4cc0-be41-098117830a3e",
+          "label": "Big King Menü",
+          "price": 34,
+          "discountLabel": "%12 indirim",
+          "firstPrice": 45,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "c33082e8-37f6-46e4-b0b1-fd0e81c48730",
+          "label": "Double King Menü",
+          "price": 49.99,
+          "discountLabel": "%10 indirim",
+          "firstPrice": 55,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "90435985-e56c-42ca-840e-001e5874c46d",
+          "label": "Big King XXL Menü",
+          "price": 51.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "67960026-46d8-4951-bd74-ab75101439d7",
+          "label": "Double CheeseBurger Menü",
+          "price": 34.49,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Burgerler",
+      "data": [
+        {
+          "id": "ffbcefee-92b6-4488-9836-fbe23d17e162",
+          "label": "Whooper Jr. Menü",
+          "price": 28.5,
+          "discountLabel": "%5 indirim",
+          "firstPrice": 35,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "5c5111e4-6d20-4271-b74e-1260092e17b3",
+          "label": "Whooper Menü",
+          "price": 37.5,
+          "discountLabel": "%10 indirim",
+          "firstPrice": 42,
+          "details": ["x4 Lipsum", "15'lu Lorem Ipsum", "x2 Lorem"]
+        },
+        {
+          "id": "78994413-aefa-49e3-9cf2-c59d4135691",
+          "label": "Double Whopper Menü",
+          "price": 48.5,
+          "discountLabel": "%3 indirim",
+          "firstPrice": 50,
+          "details": [
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "08e1122b-72c7-4f30-9847-1f77742f37e6",
+          "label": "Triple Whooper Menü",
+          "price": 44.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "c95b34f7-1286-4c4e-85e3-513174422363",
+          "label": "Big King Jr. Menü",
+          "price": 28.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        },
+        {
+          "id": "2c4350a9-b68b-48b7-ba34-05c5363812c6",
+          "label": "Big King Menü",
+          "price": 34,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        },
+        {
+          "id": "23485499-d33d-475d-8dab-c7e87f9e3267",
+          "label": "Double King Menü",
+          "price": 49.99,
+          "discountLabel": "%3 indirim",
+          "firstPrice": 55,
+          "details": null
+        },
+        {
+          "id": "2944c7f2-a700-46d1-a62f-b8ed1786335d",
+          "label": "Big King XXL Menü",
+          "price": 51.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        },
+        {
+          "id": "f3cc6ff8-dea1-473a-bb00-3fb8b7e55ae1",
+          "label": "Double CheeseBurger Menü",
+          "price": 34.49,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        }
+      ]
+    },
+    {
+      "label": "Tavuk Ürünleri",
+      "data": [
+        {
+          "id": "0ed0fc95-5347-45e5-8586-91876a140655",
+          "label": "Whooper Jr. Menü",
+          "price": 28.5,
+          "discountLabel": "%3 indirim",
+          "firstPrice": 30,
+          "details": ["15'lu Lorem Ipsum", "x2 Lorem"]
+        },
+        {
+          "id": "445ea752-0b00-45fa-8d5e-daba88ff7730",
+          "label": "Whooper Menü",
+          "price": 37.5,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": ["x2 Lorem"]
+        },
+        {
+          "id": "39ecdb19-4901-4e94-9a77-87c930589196",
+          "label": "Double Whopper Menü",
+          "price": 48.5,
+          "discountLabel": "%5 indiirm",
+          "firstPrice": 55,
+          "details": null
+        },
+        {
+          "id": "737f3057-db9b-441e-8430-33ebf5899055",
+          "label": "Triple Whooper Menü",
+          "price": 44.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": null
+        },
+        {
+          "id": "2ff81f12-3235-4809-90ea-5c9efa46bba3",
+          "label": "Big King Jr. Menü",
+          "price": 28.99,
+          "discountLabel": "%12 indirim",
+          "firstPrice": 45,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "f8241f45-f9e8-48c6-8d0d-d828c10313aa",
+          "label": "Big King Menü",
+          "price": 34,
+          "discountLabel": "%11 indirim",
+          "firstPrice": 45,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "0a937c78-a89e-48c6-b36d-b897777ea6e",
+          "label": "Double King Menü",
+          "price": 49.99,
+          "discountLabel": "%2 indirim",
+          "firstPrice": 55,
+          "details": ["10'lu lorem", "x4 Lipsum", "x2 Lorem"]
+        },
+        {
+          "id": "ac15b661-c601-4011-9b05-c8791dd81138",
+          "label": "Big King XXL Menü",
+          "price": 51.99,
+          "discountLabel": null,
+          "firstPrice": null,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        },
+        {
+          "id": "c82919a6-8199-4b68-b6ed-a4b6d81e6958",
+          "label": "Double CheeseBurger Menü",
+          "price": 34.49,
+          "discountLabel": "%12 indirim",
+          "firstPrice": 45,
+          "details": [
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem",
+            "10'lu lorem",
+            "x4 Lipsum",
+            "15'lu Lorem Ipsum",
+            "x2 Lorem"
+          ]
+        }
+      ]
+    }
+  ]
+}
