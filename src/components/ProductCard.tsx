@@ -25,7 +25,10 @@ const ProductCard: React.FC<ProductData> = ({
         <Segment>
           <Image src={imgBitmap} size='tiny' centered />
         </Segment>
-        <Card.Meta textAlign='center' style={{ marginBottom: 10 }}>
+        <Card.Meta
+          textAlign='center'
+          style={{ marginBottom: 10, lineHeight: 3 }}
+        >
           {details?.map(detail => (
             <Label basic className='product-card-details-image'>
               <Image src={imgBurger} alt='details' inline spaced='right' />
