@@ -1,8 +1,6 @@
-# React TypeScript boilerplate
- 
-Template for React App with already setup environment with most popular packages.
+# E-commerce Landing Page
 
-<br/>Main github repo [snoh666/react-typescript-boilerplate](https://github.com/snoh666/react-typescript-boilerplate)
+### [Online Demo](#https://practical-yonath-bfa469.netlify.app)
 
 ## Contained packages
 
@@ -13,7 +11,8 @@ Template for React App with already setup environment with most popular packages
 - eslint & prettier configured into airbnb rules
 - typescript compiling
 - react-app-rewired (webpack aliases without ejecting)
-- jest + enzyme testing scripts
+- semantic-ui-react
+- axios
 
 ## Installing and starting
 
@@ -24,11 +23,3 @@ Starting goes the same way as normal CRA.
 
 App is prepared to handle `yarn` and also `npm` depending on what you want just delete stuff
 related to useless one.
-
-## About
-
-I've wanted to have some kind of less advanced template to use with my side projects.
-Later on I've decided on making this real public "template" which other people can really use or learn from
-
-I know It's very hard to always get started on first projects with that kind of libraries as TypeScript or even redux-thunk so that's it!
-Feel free to use MR's are really welcome here!
