@@ -1,6 +1,6 @@
 # E-commerce Landing Page
 
-### [Online Demo](#https://practical-yonath-bfa469.netlify.app)
+https://practical-yonath-bfa469.netlify.app
 
 ## Contained packages
 
